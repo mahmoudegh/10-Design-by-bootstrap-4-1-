@@ -1,0 +1,258 @@
+/*
+  Theme Name: ElitCorp
+  Theme Coder: Mahmoud Galal
+  PSD Designer:
+  FirstColor: #08526D
+  SecondColor: #ed1d24
+*/
+
+body{font-family: 'Lato', sans-serif; height: 8000px}
+
+/* Start Uppre Bar */
+.upper-bar{background-color: #08526D; color: #ddd; padding: 7px 0}
+.upper-bar i, .upper-bar a{color: #ddd; font-size: 14px}
+.upper-bar i{margin-right: 10px}
+.upper-bar a{margin-right: 20px; line-height: 32px}
+.upper-bar a:hover{color: #fff; text-decoration: none}
+.upper-bar i:hover{cursor: pointer}
+.upper-bar span{font-size: 12px; margin-right: 15px}
+.upper-bar button
+{
+  color: #fff;
+  background-color: transparent;
+  border-radius: 0;
+  border: 2px solid #ed1d24;
+  font-size: 12px;
+  padding: 5px 20px
+}
+.upper-bar button:hover{background-color: #ed1d24}
+/* End Uppre Bar */
+
+/* Start Navbar */
+.navbar{padding: 25px 10px}
+.navbar .dropdown-toggle::after{display: none}
+.navbar-light .navbar-nav .nav-link
+{
+  color: #08526D;
+  margin-left: 18px;
+  font-weight: bold;
+  font-size: 16px
+}
+
+.navbar-light .navbar-nav .nav-link:hover{color: #ed1d24}
+.navbar-expand-lg .navbar-nav .dropdown-menu
+{
+  left: 25px;
+  border: none;
+  border-radius: 0;
+  box-shadow: 1px 1px 3px 0 #eee
+}
+
+.dropdown:hover .dropdown-menu{display: block; margin-top: 0}
+.dropdown-item{color: #08526D; font-size: 12px; padding: 10px 25px}
+.dropdown-item:hover
+{
+  color: #fff;
+  background-color: #ed1d24;
+  font-style: italic;
+  padding-left: 10px;
+  transition: padding .5s ease-in-out
+}
+/* End Navbar */
+
+/* Start Slider */
+.carousel-item:after /* overlay */
+{
+  content:"";
+  display:block;
+  position:absolute;
+  top:0;
+  bottom:0;
+  left:0;
+  right:0;
+  background:rgba(0,0,0,0.5)
+}
+
+.carousel-caption
+{
+  font-size: 68px;
+  font-weight: bold;
+  text-align: left;
+  bottom: 27%;
+  left: 9%
+}
+
+.carousel-caption p{line-height: 1}
+.carousel-caption span{background-color: #ed1d24; padding: 0 10px}
+
+.carousel-indicators li
+{
+  width: 13px;
+  height: 13px;
+  border-radius: 50%;
+  background-color: transparent;
+  border: 2px solid #fff;
+  margin-left: 5px;
+  margin-right: 5px;
+  cursor: pointer
+}
+
+.carousel-indicators li:hover{background-color: #fff}
+
+.carousel-item{height: 100vh}
+/* End Slider */
+
+/* Start Features Section */
+.features{padding: 70px 0 30px; background-color: #fff}
+.features i
+{
+  color: #fff;
+  background-color: #ed1d24;
+  width: 60px;
+  height: 60px;
+  line-height: 60px;
+  border-radius: 50%;
+  margin-bottom: 20px
+}
+.features h4{color: #08526D}
+.features p{color: #8B999F; margin-bottom: 40px}
+/* End Features Section */
+
+/* Start Overview Section */
+.overview{background-color: #F0F5F7; padding: 70px 0}
+.overview .h1{font-weight: 900; margin-bottom: 30px; letter-spacing: 2px}
+.overview p{color: #555; letter-spacing: 2px}
+.overview button
+{
+  background-color: #ed1d24;
+  color: #fff;
+  font-weight: bold;
+  border: none;
+  padding: 10px 30px;
+  font-size: 15px;
+  margin-top: 10px;
+  cursor: pointer
+}
+.overview button:hover{background-color: #08526D}
+/* End Overview Section */
+
+/* Start Featured Work Section */
+.featured-work{background-color: #fff; padding: 70px 0}
+.featured-work .h1{font-weight: 900; margin-bottom: 30px; letter-spacing: 2px}
+
+.featured-work p
+{
+  color: #555;
+  letter-spacing: 3px;
+  line-height: 2;
+  margin-bottom: 40px
+}
+
+.featured-work li
+{
+  color: #08526D;
+  background-color: #fff;
+  font-weight: bold;
+  border: 1px solid #ccc;
+  padding: 9px 15px;
+  margin-left: 3px;
+  margin-right: 3px;
+  font-size: 15px;
+  margin-bottom: 10px;
+  cursor: pointer;
+  display: inline-flex;
+  justify-content: center;
+  min-width: 90px
+}
+
+.featured-work li:hover{border-color: #ed1d24; color: #ed1d24}
+
+.featured-work li.active
+{
+  color: #fff;
+  background-color: #ed1d24;
+  border-color: #ed1d24;
+  outline: 0
+}
+
+.featured-work .featured-work-items .col-md-3
+{
+  padding-right: 0 !important;
+  padding-left: 0 !important
+}
+/* End Featured Work Section */
+
+/* My Framework */
+.uppercase{text-transform: uppercase}
+/* My Framework */
+
+/* Start Media */
+@media(max-width: 225px)/* xxxs screen */
+{
+  .upper-bar .col{text-align: center !important}
+  .upper-bar i, .upper-bar a{font-size: 11px ; margin: 0}
+  .upper-bar button{margin: 5px 0}
+  .upper-bar span{margin: 0}
+  .carousel-item{height: 26vh}
+  .carousel-indicators{display: none}
+  .navbar-light .navbar-toggler
+  {
+    padding: 10px 0px;
+    font-size: 13px;
+    margin-left: 3px
+  }
+}
+
+@media(min-width: 226px) and (max-width: 380px)/* xxs screen */
+{
+  .upper-bar .col{text-align: center !important}
+  .upper-bar i, .upper-bar a{font-size: 10px ; margin: 0}
+  .upper-bar button{margin: 5px 0}
+  .upper-bar span{margin: 0}
+  .carousel-item{height: 26vh}
+  .carousel-indicators{display: none}
+  .navbar-light .navbar-toggler
+  {
+    padding: 10px 0px;
+    font-size: 13px;
+    margin-left: 3px
+  }
+}
+
+@media(min-width: 381px) and (max-width: 575px)/* xs screen */
+{
+  .upper-bar a{font-size: 12px}
+  .upper-bar span{margin-right: 0}
+  .upper-bar button{margin-right: 0}
+  .carousel-item{height: 44vh}
+  .carousel-indicators{display: none}
+}
+
+@media(min-width: 576px) and (max-width: 767px)/* sm screen */
+{
+  .upper-bar a{font-size: 13px}
+  .upper-bar span{margin-right: 0}
+  .upper-bar button{margin-right: 15px}
+  .upper-bar .col{padding: 0}
+  .carousel-item{height: 60vh}
+  .carousel-indicators{display: none}
+}
+
+@media (min-width: 768px) and (max-width: 991px)/* md screen */
+{
+  .upper-bar span{margin-right: 0}
+  .upper-bar button{margin-right: 15px}
+  .carousel-item{height: 78vh}
+  .carousel-caption{font-size: 53px}
+}
+
+@media(min-width: 992px) and (max-width: 1199px)/* lg screen */
+{
+  .upper-bar br{display: none}
+}
+
+@media(min-width: 1200px)/* xl screen */
+{
+  .upper-bar br{display: none}
+}
+/* End Media */
